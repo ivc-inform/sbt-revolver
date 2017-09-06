@@ -104,7 +104,7 @@ To add environment variables when running the application:
 *Note: JRebel support in sbt-revolver is not actively supported any more.*
 
 If you have JRebel installed you can let _sbt-revolver_ know where to find the `jrebel.jar`. You can do this
-either via the `Revolver.jRebelJar` setting directly in your SBT config or via a shell environment variable with the
+either via the `spray.revolver.RevolverPlugin.autoImport.reJRebelJar` setting directly in your SBT config or via a shell environment variable with the
 name `JREBEL_PATH` (which is the recommended way, since it doesn't pollute your SBT config with system-specific settings).
 For example, on OSX you would add the following line to your shell startup script:
 
